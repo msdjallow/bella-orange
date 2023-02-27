@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+body {
+    background-color: #ffffff;
+    width: 1500px;
+    block-size: 100%;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    max-width: 1440px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1499px) {
+    body{
+        width: 90%;
+    }
+}
+
+
+.entete {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.logo{
+ margin-top: 1%;margin-left: 2%;
+}
+
+.blocs{
+    font-family: 'Times New Roman', Times, serif; 
+    position: relative;font-size: 1.5rem;font-weight: bold; padding: 2rem;
+}
+
+
+
+
+
+
+/* la section supérieure de la bannière Hero */
+
+.hero {
+    height: 100%;
+    width: 100%;
+    padding: 7rem 0rem 0rem;
+    background-image: url("images/heroimg.png");
+    background-repeat: no-repeat;
+    background-position: initial;
+    background-size: auto;
+    position: relative;
+    margin-left: 4rem; margin-top:4rem ;
+    
+}
+
+.hero-upper {
+    text-align: center;
+    margin: 2rem 0rem 0rem;
+    padding: 0px 10px;
+}
+
+
+.hero-text {
+    color: white; font-weight: bold;
+    
+}
+
+/* style des buttons */
+
+button {
+    color: #ffffff;
+    text-align: center;
+    border-style: solid;
+    border-width: thin;
+    border-color: rgb(255, 255, 255);
+    padding: 1rem 3rem;
+    background-color: initial;
+    margin: 0rem 1rem;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    font-weight: bold;
+
+}
+
+/* forme bordure des bouttons  */
+button.button-upper{
+    border-radius: 3rem;
+}
+
+
+#playstore:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+
+button:hover {
+    color: black;
+    background-color: rgb(216, 216, 216);
+}
+
+
+.hero-button {
+    margin: 20px 30px 0px;
+    padding: 10px 0px 0px;
+    
+}
+
+
+.hero-lower-img {
+    text-align: center;
+    position: relative;
+}
+
+
+/* Hero section ended */
+
+
+
+
+.hr {
+    width: 60%;
+    height: 1px;
+    margin: 0% 18% 3%;
+    border-radius: 5px; 
+}
+
+
+.aboutHeaderTxt {
+    text-align: center;
+    font-weight: bold;
+    color: #423f3f;
+
+}
+
+
+.main-content {
+    display: grid;
+    grid-template-rows: 0.5fr 2fr 2fr 2fr 1fr 0.5fr;
+    grid-auto-rows: 0em;
+}
+
+.section-side-txt {
+    margin-right: 30rem;
+    background-color: #ffffff;
+    align-items: center;
+    /* justify-items: center; */
+    /* padding: 14em 0em 20em; */
+    margin-top: 2rem;
+    margin-left: -10rem;
+}
+
+.section-txt1 {
+    font-weight: bold;
+    font-size: 28px;
+    padding: 8px 0px 10px;
+    color:  #252b42;
+    
+}
+
+
+.middle-txt {
+    padding: 10em 0em 20em;
+    margin-right: -10rem;
+    margin-left: 5rem;
+}
+
+
+.section {
+    /* margin-right: 2vw;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-area: auto;
+    margin-left: 8rem; */
+    display: flex;
+    justify-content: space-around;
+}
+#middle-section {
+    margin-left: 15rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    grid-area: auto;
+
+}
+
+/* formulaire */
+.bady{
+    border: 1px solid gray;text-align: center;justify-items: center;
+    margin-left: 40%;margin-right: 40%;width: 500px;height: 350px;
+}
+
+.newlogo{
+    margin-left: 6rem;
+}
+.inscrire{
+    font-size: 100%;font-weight: bolder ;margin-left: 3%;
+}
+.trait{
+    border-top: 2px solid orangered; width: 30%;margin-left: 20%;margin-top: 2%;
+}
+
+
+.mail{
+    margin-top: 8%;
+    
+}
+.traitgris{
+    border-top: 2px solid gray;width: 70%; margin-top: 1%;margin-left: 18%;
+}
+
+
+/* this border radius is for */
+
+.footer {
+    margin-top: 5rem;margin-left: 10rem;
+    padding: 2px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.social {
+    padding: 0em 2em;
+    display: inline-flex;
+    text-align: center;
+    block-size: 3rem;
+    margin-top: 2rem;
+}
+
+.copyright{
+    margin-left: -2rem;
+    margin-top: 2rem;
+}
+
+
+
+/* grid media queries pour desktop: */
+
+/* Commentaire externe
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+ */
+
+ /* pour telephone: */
+
+ /* Commentaire externe */
+/* @media only screen and (max-width: 768px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+} */
+
+
